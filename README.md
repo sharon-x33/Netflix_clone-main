@@ -47,5 +47,4 @@ A fully responsive Netflix clone built with modern web technologies, featuring u
 ## 📜 License
 This project is for educational purposes only and does not intend to replicate Netflix's functionality commercially.
 
----
-Made with ❤️ by [Your Name]
+
