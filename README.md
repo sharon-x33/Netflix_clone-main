@@ -5,7 +5,7 @@ A fully responsive Netflix clone built with modern web technologies, featuring u
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](images/Screenshot%20(I).png)
+![Home Page](images/Screenshot%20(1).png)
 
 ### Movie Details Page
 ![Movie Details](images/Screenshot%20(2).png)
