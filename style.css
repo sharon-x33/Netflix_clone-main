@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(28, 19, 48);
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(28, 19, 48, 0.7),rgba(28, 19, 48, 0.7)),url("images/header-image.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.language img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 25%;
+}
+
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 1000px;
+}
+
+@media (max-width: 750px){
+    .header-content h1{
+        font-size: 35px;
+    }
+    .header .header-content h3{
+        font-size: 20px;
+    }
+    .header .header-content p{
+        font-size: 15px;
+    }
+    .email-signup{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .email-signup button{
+       margin-top: 5px;
+    }
+    body .email2 p{
+        font-size: 15px;
+
+    }
+
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin: 20px 0;
+    font-size: 25px;
+    color: white;
+}
+
+.header-content p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.email-signup{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.email-signup input{
+    flex: 1;
+    background: #1b1b1b;
+    border: 1px solid #fff;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 15px 20px;
+    max-width: 410px;
+}
+
+.email-signup button{
+    flex: 1;
+    background: #db0001;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 4px;
+    padding: 15px 30px;
+    max-width: 200px;
+    font-size: 25px;
+}
+
+.email-signup button:hover{
+    background: #ec1212;
+}
+
+.features{
+    background: linear-gradient(rgba(28, 19, 48),rgba(28, 19, 48));
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 25px;
+    justify-content: center;
+}
+
+.tv,.popcorn,.ball,.download{
+    background: linear-gradient(135deg,rgb(144, 36, 120,0.7),rgb(43, 13, 63,0.7));
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-left: 10px;
+    width: 330px;
+    height: 420px;
+    margin-top: 10px;
+}
+
+.tv img,.popcorn img,.ball img,.download img{
+    width: 100px;
+    margin-top: 30px;
+}
+
+.tv img{
+    margin-bottom: 15px;
+}
+
+p{
+    margin-top: 20px;
+}
+
+.faq h2{
+    padding: 10px 30px;
+    margin-left: 40px;
+    margin-top: 70px;
+    font-size: 35px;
+    
+}
+
+@media (max-width:1100px){
+    .faq h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 750px){
+    .faq h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750px){
+    .faq ul li label{
+        font-size: 16px;
+    }
+}
+@media (max-width: 750px){
+    .faq ul li .content{
+        font-size: 16px;
+    }
+}
+
+.accordion{
+    margin: 0 80px;
+    max-width: 1100px;
+}
+
+.accordion li{
+    list-style: none;
+    padding: 5px;
+}
+
+.accordion li label{
+    background: #221853;
+    padding: 25px 20px;
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+label:after{
+    content: '+';
+    font-size: 34px;
+    right: 15px;
+    bottom: 17px;
+    position: absolute;
+    transition: transform 0.5s;
+    
+}
+
+.accordion li label:hover{
+    background: #23146d;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #221853;
+    padding: 0 15px;
+    margin-top: 5px;
+    font-size: 22px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 20px 15px;
+
+    
+}
+
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(45deg);
+}
+
+.email2{
+    margin: 10px 50px 10px 80px;
+}
+
+.email2 p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.foot{
+    display: flex;
+}
+
+.call{
+    display: flex;
+    margin: 120px 80px 50px;
+}
+
+.call h5{
+    font-size: 15px;
+    color: #898686;
+}
+.call a{
+    color: #898686;
+    margin-left: 5px;
+    font-weight: 200;
+}
+
+.foot{
+    color: #898686;
+}
+
+.foot ul li{
+    list-style: none;
+    text-decoration: underline;
+    padding: 10px 80px;
+}
+
+.lan button{
+    margin-left: 90px;
+    padding: 7px 10px;
+    margin: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.lan p{
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
